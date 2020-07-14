@@ -26,15 +26,15 @@ for i in range(3,13):
     print(drama_name[i].text)
 
 get_today = f"2020-{month_int}-{day} Netflex 前十名 "
-first = x[3].text
-second = x[4].text
-third = x[5].text
-four = x[6].text
-five = x[7].text
-six = x[7].text
-seventh = x[9].text
-eight = x[10].text
-nine = x[11].text
-ten = x[12].text
+first = drama_name[3].text
+second = drama_name[4].text
+third = drama_name[5].text
+four = drama_name[6].text
+five = drama_name[7].text
+six = drama_name[7].text
+seventh = drama_name[9].text
+eight = drama_name[10].text
+nine = drama_name[11].text
+ten = drama_name[12].text
 
 
