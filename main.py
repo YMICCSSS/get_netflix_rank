@@ -19,11 +19,11 @@ get_movie=requests.get(f"http://ddm.com.tw/blog/post/netflix-daily-top10-{month}
 get_movie =b4(get_movie.text,"lxml")
 
 search_field = get_movie.find("div",class_="Zi_ad_ar_iR")
-x = search_field.find_all("li")
+drama_name = search_field.find_all("li")
 print(f"2020-{month_int}-{day} Netflex 前十名 ")
 print("")
 for i in range(3,13):
-    print(x[i].text)
+    print(drama_name[i].text)
 
 get_today = f"2020-{month_int}-{day} Netflex 前十名 "
 first = x[3].text
